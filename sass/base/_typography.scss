@@ -1,0 +1,49 @@
+.heading {
+    font-family: "Poppins", sans-serif;
+    color: $color-DarkCyan;
+    @include for(phone) {
+        text-align: center;
+    }
+
+
+    &-primary {
+        font-size: 8rem;
+    @include for(phone) {}
+        font-size: 5rem;
+    }
+    &-secondary {
+        font-size: 4rem;
+    @include for(phone) {
+        font-size: 3rem;
+    }
+        
+    }
+    &-tertiary {
+        font-size: 3rem;
+    @include for(phone) {
+        font-size: 2.5rem;
+    }
+
+    }
+
+}
+
+
+
+
+.paragraph {
+    font-size: 1.8rem;
+    width: 55rem;
+    align-self: center;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: $color-DarkCyan;
+
+
+    @include for(phone) {
+        width: 90%;
+    }
+
+    
+}

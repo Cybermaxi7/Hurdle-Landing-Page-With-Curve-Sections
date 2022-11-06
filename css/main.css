@@ -1,0 +1,535 @@
+/*
+0       --- 600px    => Mobile Phones
+600px   --- 900px    => Tablet Portrait
+900px   --- 1200px   => Tablet Landscape
+1200px  --- 1800px[ we already styled that which is the desktop version]
+----------- 1800px + => Big Desktop
+*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media screen and (max-width: 56.25em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+body {
+  line-height: 1.7;
+  width: 100vw;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+.heading {
+  font-family: "Poppins", sans-serif;
+  color: #00252e;
+}
+
+@media screen and (max-width: 37.5em) {
+  .heading {
+    text-align: center;
+  }
+}
+
+.heading-primary {
+  font-size: 8rem;
+  font-size: 5rem;
+}
+
+.heading-secondary {
+  font-size: 4rem;
+}
+
+@media screen and (max-width: 37.5em) {
+  .heading-secondary {
+    font-size: 3rem;
+  }
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 37.5em) {
+  .heading-tertiary {
+    font-size: 2.5rem;
+  }
+}
+
+.paragraph {
+  font-size: 1.8rem;
+  width: 55rem;
+  align-self: center;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #00252e;
+}
+
+@media screen and (max-width: 37.5em) {
+  .paragraph {
+    width: 90%;
+  }
+}
+
+.footer {
+  width: 100%;
+  color: #fff;
+}
+
+.footer .img-footer {
+  display: block;
+  width: 100%;
+  margin-bottom: -1rem;
+}
+
+.footer__container {
+  padding-inline: 10rem;
+  padding-block: 5rem;
+  background-color: #00252e;
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 56.25em) {
+  .footer__container {
+    padding-inline: 5rem;
+  }
+}
+
+@media screen and (max-width: 37.5em) {
+  .footer__container {
+    flex-direction: column-reverse;
+    padding-inline: 3rem;
+  }
+}
+
+.footer__left img {
+  max-width: 15rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer__left p {
+  font-size: 1.4rem;
+  width: 30rem;
+  font-weight: 600;
+  opacity: .7;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 56.25em) {
+  .footer__left p {
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 37.5em) {
+  .footer__left p {
+    width: 100%;
+  }
+}
+
+.footer__left .contact {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.footer__left .contact img {
+  display: block;
+  width: 2rem;
+}
+
+.footer__left .contact a {
+  color: #fff;
+}
+
+.footer__left .socials {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer__left .socials > a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer__left .socials .icon {
+  font-size: 4rem;
+  margin-top: 5rem;
+  transition: all .3s ease-in;
+}
+
+.footer__left .socials .icon:hover {
+  color: aqua;
+  cursor: pointer;
+}
+
+.footer__right h3 {
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.footer__right p {
+  font-size: 1.4rem;
+  width: 33rem;
+  font-weight: 600;
+  opacity: .7;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 56.25em) {
+  .footer__right p {
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 37.5em) {
+  .footer__right p {
+    width: 100%;
+  }
+}
+
+.footer__right form {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+@media screen and (max-width: 56.25em) {
+  .footer__right form {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.footer__right form label {
+  display: none;
+}
+
+.footer__right form input[type=email] {
+  width: 30rem;
+  height: 4rem;
+  border-radius: .6rem;
+  border: none;
+  outline: none;
+}
+
+@media screen and (max-width: 56.25em) {
+  .footer__right form input[type=email] {
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 37.5em) {
+  .footer__right form input[type=email] {
+    width: 100%;
+  }
+}
+
+.footer__right form input[type=submit] {
+  width: 15rem;
+  height: 4rem;
+  border-radius: .6rem;
+  background-color: #ff52bf;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.6rem;
+  border: none;
+  transition: all .3s ease-in;
+}
+
+.footer__right form input[type=submit]:hover {
+  background-color: #ff8fd8;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 37.5em) {
+  .footer__right form input[type=submit] {
+    align-self: flex-end;
+  }
+}
+
+.header {
+  width: 100%;
+  padding: 5rem;
+}
+
+@media screen and (max-width: 37.5em) {
+  .header {
+    padding: 3rem;
+  }
+}
+
+.header .navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15rem;
+}
+
+.header .navigation img {
+  display: block;
+  max-width: 18rem;
+  object-fit: contain;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 1.3rem;
+}
+
+.header__container p {
+  width: 60rem;
+  font-size: 1.9rem;
+}
+
+@media screen and (max-width: 56.25em) {
+  .header__container p {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+}
+
+.header__container-image {
+  width: 75%;
+  margin-top: 10rem;
+}
+
+@media screen and (max-width: 37.5em) {
+  .header__container-image {
+    width: 100%;
+  }
+}
+
+.header__container-image img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.btn {
+  text-decoration: none;
+  font-size: 1.6rem;
+  border-radius: 5rem;
+}
+
+.btn__outline {
+  border: 1px solid #ff52bf;
+  padding: .4rem 2.5rem;
+  color: #ff52bf;
+  transition: all .3s ease-out;
+}
+
+.btn__outline:hover {
+  border: 1px solid #ff8fd8;
+  color: #ff8fd8;
+}
+
+.btn__solid {
+  background-color: #ff52bf;
+  padding: 1.5rem 5rem;
+  color: #fff;
+  font-weight: 700;
+  transition: all .3s ease-out;
+}
+
+.btn__solid:hover {
+  background-color: #ff8fd8;
+}
+
+.section__readings {
+  margin-block: 10rem;
+  padding: 5rem;
+}
+
+@media screen and (max-width: 37.5em) {
+  .section__readings {
+    padding: 3rem;
+  }
+}
+
+.section__readings .readings {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 37.5em) {
+  .section__readings .readings {
+    flex-direction: column;
+  }
+}
+
+.section__readings .readings__col {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+}
+
+@media screen and (max-width: 37.5em) {
+  .section__readings .readings__col {
+    margin: 0 auto;
+    margin-bottom: 10rem;
+    width: fit-content;
+  }
+}
+
+.section__readings .readings__col img {
+  max-width: 4rem;
+  object-fit: contain;
+}
+
+.section__readings .readings__col p {
+  opacity: 0.6;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 37.5em) {
+  .section__readings .readings__col p {
+    font-size: 1.4rem;
+  }
+}
+
+.section-about {
+  width: 100%;
+}
+
+.about {
+  width: 100%;
+}
+
+.about .row-1 {
+  background-color: #f5faff;
+}
+
+.about .row-2 {
+  background-color: #fff;
+  flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 37.5em) {
+  .about .row-2 {
+    flex-direction: column-reverse;
+  }
+}
+
+.about .img-top {
+  display: block;
+  margin-bottom: -1rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+.about .img-bottom {
+  display: block;
+  width: 100%;
+  margin-top: -1rem;
+  object-fit: cover;
+}
+
+.about__row {
+  display: flex;
+  align-items: center;
+  gap: 15rem;
+  padding-inline: 12rem;
+  padding-block: 10rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 56.25em) {
+  .about__row {
+    gap: 5rem;
+    padding-inline: 6rem;
+  }
+}
+
+@media screen and (max-width: 37.5em) {
+  .about__row {
+    flex-direction: column-reverse;
+    padding-inline: 3rem;
+  }
+}
+
+.about__row-left {
+  width: 50%;
+}
+
+@media screen and (max-width: 37.5em) {
+  .about__row-left {
+    width: 100%;
+  }
+}
+
+.about__row-left h2 {
+  margin-bottom: 1.5rem;
+}
+
+.about__row-left p {
+  font-size: 1.8rem;
+  width: 100%;
+  text-align: start;
+}
+
+@media screen and (max-width: 56.25em) {
+  .about__row-left p {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}
+
+.about__row-right {
+  width: 50%;
+}
+
+@media screen and (max-width: 37.5em) {
+  .about__row-right {
+    width: 100%;
+  }
+}
+
+.about__row-right img {
+  max-width: 100%;
+}
+
+.section-cta {
+  width: 100%;
+  padding-block: 15rem;
+}
+
+.section-cta .cta {
+  width: 80rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 56.25em) {
+  .section-cta .cta {
+    width: 100%;
+  }
+}
+
+.section-cta .cta h2 {
+  margin-bottom: 3rem;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,149 @@
+.section__readings {
+  margin-block: 10rem;
+  padding: 5rem;
+  @include for(phone) {
+    padding: 3rem;
+  }
+
+
+  .readings {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    @include for(phone) {
+        flex-direction: column;
+    }
+
+
+    &__col {
+      display: flex;
+      flex-direction: column;
+      width: 25rem;
+    @include for(phone) {
+        margin: 0 auto;
+        margin-bottom: 10rem;
+        width: fit-content;
+    }
+
+
+      img {
+        max-width: 4rem;
+        object-fit: contain;
+        
+      }
+
+      p {
+        opacity: 0.6;
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+    @include for(phone) {
+        font-size: 1.4rem;
+    }
+
+     
+
+      }
+    }
+  }
+}
+
+.section-about {
+  width: 100%;
+}
+.about {
+  width: 100%;
+
+  .row-1 {
+    background-color: $color-paleBlue;
+  }
+  .row-2 {
+    background-color: #fff;
+    flex-direction: row-reverse;
+    @include for(phone) {
+        flex-direction: column-reverse;
+    }
+
+  }
+
+  .img-top {
+    display: block;
+    margin-bottom: -1rem;
+    object-fit: cover;
+    width: 100%;
+  }
+  .img-bottom {
+    display: block;
+    width: 100%;
+    margin-top: -1rem;
+    object-fit: cover;
+  }
+  &__row {
+    display: flex;
+    align-items: center;
+    gap: 15rem;
+    padding-inline: 12rem;
+    padding-block: 10rem;
+    width: 100%;
+    @include for(tab-port) {
+        gap: 5rem;
+        padding-inline: 6rem;
+    }
+    @include for(phone) {
+        flex-direction: column-reverse;
+        padding-inline: 3rem;
+    }
+
+
+    &-left {
+      width: 50%;
+    @include for(phone) {
+        width: 100%;
+    }
+
+      h2 {
+        margin-bottom: 1.5rem;
+      }
+      p {
+        font-size: 1.8rem;
+        width: 100%;
+        text-align: start;
+        @include for(tab-port) {
+            font-size: 1.6rem;
+            text-align: center;
+        }
+      }
+    }
+    &-right {
+      width: 50%;
+
+    @include for(phone) {
+        width: 100%;
+    }
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+}
+
+.section-cta {
+    width: 100%;
+    padding-block: 15rem;
+
+    .cta {
+        width: 80rem;
+        margin: 0 auto;
+        text-align: center;
+
+        @include for(tab-port) {
+            width: 100%;
+        }
+
+        h2 {
+            margin-bottom: 3rem;
+        }
+    }
+}

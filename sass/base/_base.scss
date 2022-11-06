@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  //this defines what 1rem is from the default browser size which is 16px(10/16*100)
+  font-size: 62.5%; //1rem = 10px;
+
+  @include for(tab-port) {
+    font-size: 60%;
+  }
+  
+}
+
+body {
+  line-height: 1.7;
+  width: 100vw;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+
+}

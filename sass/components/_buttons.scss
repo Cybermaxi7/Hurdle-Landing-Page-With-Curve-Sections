@@ -1,0 +1,28 @@
+.btn {
+    text-decoration: none;
+    font-size: 1.6rem;
+    border-radius: 5rem;
+    // font-family: "Open Sans", sans-serif;
+    &__outline {
+        border: 1px solid $color-pink;
+        padding: .4rem 2.5rem;
+        color: $color-pink;
+        transition: all .3s ease-out;
+
+        &:hover{
+            border: 1px solid $color-lightPink;
+            color: $color-lightPink;
+        }
+    }
+    &__solid {
+        background-color: $color-pink;
+        padding: 1.5rem 5rem;
+        color: #fff;
+        font-weight: 700;
+        transition: all .3s ease-out;
+
+        &:hover {
+            background-color: $color-lightPink;
+        }
+    }
+}

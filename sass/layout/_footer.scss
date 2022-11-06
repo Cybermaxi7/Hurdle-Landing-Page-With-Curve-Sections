@@ -1,0 +1,158 @@
+.footer {
+    width: 100%;
+    color: #fff;
+
+    .img-footer {
+        display: block;
+        width: 100%;
+        margin-bottom: -1rem;
+    }
+    
+    &__container {
+      padding-inline: 10rem;
+      padding-block: 5rem;
+    background-color: $color-DarkCyan;
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    width: 100%;
+
+    @include for (tab-port) {
+        padding-inline: 5rem;
+    }
+    @include for(phone) {
+        flex-direction: column-reverse;
+        padding-inline: 3rem;
+    }
+
+
+  }
+  &__left {
+    img {
+        max-width: 15rem;
+        margin-bottom: 1.5rem;
+    }
+    p {
+        font-size: 1.4rem;
+        width: 30rem;
+        font-weight: 600;
+        opacity: .7;
+        margin-bottom: 2rem;
+
+
+        @include for(tab-port) {
+            width: 20rem;
+        }
+    @include for(phone) {
+        width: 100%;
+    }
+
+    }
+    .contact {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        img {
+            display: block;
+            width: 2rem;  
+        }
+        a {
+            color: #fff;
+        }
+
+    }
+    .socials {
+        display: flex;
+        gap: 2rem;
+
+        & > a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .icon { 
+            font-size: 4rem;
+            margin-top: 5rem;
+            transition: all .3s ease-in;
+
+            &:hover {
+                color: aqua;
+                cursor: pointer;
+            }
+        }
+    }
+  }
+  &__right {
+    h3 {
+        font-size: 3.2rem;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+    }
+    p {
+        font-size: 1.4rem;
+        width: 33rem;
+        font-weight: 600;
+        opacity: .7;
+        margin-bottom: 2rem;
+        @include for(tab-port) {
+            width: 20rem;
+        }
+    @include for(phone) {
+        width: 100%;
+    }
+
+    }
+    form {
+        display: flex;
+        justify-content: space-between;
+        gap: 4rem;
+
+        @include for(tab-port) {
+         flex-direction: column;
+         gap: 2rem;   
+        }
+
+        label {
+            display: none;
+        }
+        input[type=email] {
+            width: 30rem;
+            height: 4rem;
+            border-radius: .6rem;
+            border: none;
+            outline: none;
+
+            @include for (tab-port) {
+                width: 20rem;
+            }
+    @include for(phone) {
+        width: 100%;
+    }
+
+        }
+        input[type=submit] {
+            width: 15rem;
+            height: 4rem;
+            border-radius: .6rem;
+            background-color: $color-pink;
+            color: #fff;
+            font-weight: 600;
+            font-size: 1.6rem;
+            border: none;
+            transition: all .3s ease-in;
+
+            &:hover {
+                background-color: $color-lightPink;
+                cursor: pointer;
+            }
+    @include for(phone) {
+        align-self: flex-end;
+    }
+
+
+        }
+    }
+  }
+}

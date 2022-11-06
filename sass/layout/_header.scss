@@ -1,0 +1,49 @@
+.header {
+  width: 100%;
+  padding: 5rem;
+  @include for(phone) {
+    padding: 3rem;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15rem;
+    img {
+      display: block;
+      max-width: 18rem;
+      object-fit: contain;
+    }
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 1.3rem;
+
+    p {
+      width: 60rem;
+      font-size: 1.9rem;
+      
+      @include for(tab-port) {
+        font-size: 1.5rem;
+        width: 100%;
+      }
+    }
+
+    &-image {
+      width: 75%;
+      margin-top: 10rem;
+    @include for(phone) {
+        width: 100%;
+    }
+
+
+      img {
+        max-width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
