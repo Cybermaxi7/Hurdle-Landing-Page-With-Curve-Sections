@@ -42,8 +42,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [CLick here](https://your-solution-url.com)
-- Live Site URL: [CLick here](https://your-live-site-url.com)
+- Solution URL: [CLick here](https://www.frontendmentor.io/solutions/hurdle-landing-page-with-curved-sections-0SWQVFhlJC)
+- Live Site URL: [CLick here](https://cybermaxi7.github.io/Hurdle-Landing-Page-With-Curve-Sections/)
 
 
 
